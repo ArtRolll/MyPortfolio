@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+    <title>Amin | امین</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f120864066.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="cotainer">
+            <nav>
+                <span class="logo d-flex"><h1 style=" color: #ff004f;">A</h1><h1>min.</h1></span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <iconify-icon icon="uil:times" class="fas" onclick="closemenu()"></iconify-icon>
+                </ul>
+                <iconify-icon icon="ic:round-menu" class="fas" onclick="openmenu()"></iconify-icon>
+            </nav>
+            <div class="header-text">
+                <p class=" opacity-75">Web Designer</p>
+                <h1>Hi, I'm <span>Amin</span> <br> Im From Iran </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="cotainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="img11">
+                        1
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Amin and I'm an enthusiastic 18 year old programmer. Since I was a child, I was fascinated by the world of technology and computers. As I got older, my passion for programming grew. And I like to improve day by day in the world of programming. I am very responsible in my work and I always try to do my work with the best quality.</p>
+                        <div class="tab-titles mt-5">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                <li><span>Web Develoment</span><br>Front End | Back End Developer</li>
+                                <!-- <li><span>App Develoment</span><br>Designing App Interfaces</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li class="lh-lg">
+                                    Start of Programming Exercise on <span>March 23, 2023</span><br>
+                                    Figma Training Starts on <span>September 4, 2023</span><br>
+                                    Freelance Web Developer <span>(2023-Present)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>School</span><br>High School Diploma <span>( Expected graduation year: 2023 )</span></li>                   
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <iconify-icon icon="ph:code-bold"></iconify-icon>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.</p>
+                    
+                </div>
+                <div>
+                    <iconify-icon icon="material-symbols:crop"></iconify-icon>
+                    <h2>UI/UX Design</h2>
+                    <p>A UI/UX developer is a specialized software developer who focuses on creating user interfaces and user experiences for a variety of products, such as websites and mobile apps</p>
+                    
+                </div>
+                <div>
+                    <iconify-icon icon="fluent:data-pie-24-regular"></iconify-icon>
+                    <h2>Web Back End</h2>
+                    <p>The back end of a website is everything that goes on behind the scenes, from servers to databases, and much more...</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img-work-1.jpg" class="img-work" alt="">
+                    <div class="layer">
+                        <h3>Frontend</h3>
+                        <p class=" fs-5">Html | Css | Js</p>
+                        <!-- <a href=""><iconify-icon icon="akar-icons:link-out"></iconify-icon></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img-work-3.jpg" class="img-work" alt="">
+                    <div class="layer">
+                        <h3>Backend</h3>
+                        <p class=" fs-5">Python | Js | React | Angular</p>
+                        <!-- <a href=""><iconify-icon icon="akar-icons:link-out"></iconify-icon></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./808bee1ae9d7715baeb2e9e5325b57da.jpg" class="img-work" alt="">
+                    <div class="layer">
+                        <h3>UI | UX</h3>
+                        <p class=" fs-5">Adobe Xd | Figma</p>
+                        <!-- <a href=""><iconify-icon icon="akar-icons:link-out"></iconify-icon></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><iconify-icon icon="ri:mail-send-line"></iconify-icon> wlaminn84@gmail.com</p>
+                    <p><iconify-icon icon="ic:baseline-phone"></iconify-icon> +98-9174149123</p>
+                    <div class="social-icons">   
+                        <a href="https://instagram.com/za_amin_rei?igshid=NGVhN2U2NjQ0Yg=="><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                        <a href="https://t.me/za-amin-rei"><iconify-icon icon="ic:baseline-telegram"></iconify-icon></a>
+                        <a href="https://web.whatsapp.com/send?phone=989174149123"><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
+                        <a href="https://github.com/za-amin-rei"><iconify-icon icon="mdi:github"></iconify-icon></a>
+                    </div>
+                    <!-- <a href="./file/my-cv.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>  
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiSpej_riz-uMu4Qpo9cc63HsWy6e74ajXGS2cFYxQEZItafv2CJw1dq9XZZv6-wIo6g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
