@@ -24,13 +24,13 @@ body{
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #ff004f;
+    background-color: #6420AA;
     border-radius: 10px;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./luffy-web.jpg);
+    background-image: url(./BackgroundBody.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -61,7 +61,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #6420AA;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -71,15 +71,16 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
     font-size: 30px;
+    margin-top: 20%;
+    
 }
 .header-text h1{
     font-size: 50px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #6420AA;
 }
 .logo h1{
     font-size: 50px;
@@ -100,12 +101,11 @@ nav ul li a:hover::after{
 }
 .img11{
     width: 100%;
-    border-radius: 31% 69% 55% 45% / 32% 35% 65% 68% ;
-    height: 450.094px;
-    background: rgb(8,8,8);
-    background: radial-gradient(circle, rgba(8,8,8,1) 50%, rgba(255,0,79,1) 84%);
-    color: rgba(255, 255, 255, 0);
-    transition: 0.5s;
+    height: 495px;
+    background-image: url(./download.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -130,7 +130,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #6420AA;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -145,7 +145,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color: #6420AA;
     font-size: 14px;
 }
 .tab-contents{
@@ -167,7 +167,12 @@ nav ul li a:hover::after{
     margin-top: 50px; 
 }
 .services-list div{
-    background: #262626;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -191,7 +196,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: #6420AA;
     transform: translateY(-10px);
 }
 /* --------portfolio------ */
@@ -258,7 +263,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #6420AA;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -278,7 +283,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #6420AA;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -286,7 +291,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #6420AA;
 }
 /* --------contact---- */
 .contact-left{
@@ -299,7 +304,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p iconify-icon{
-    color: #ff004f;
+    color: #6420AA;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -315,12 +320,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #6420AA;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #6420AA;
 }
 .contact-right form{
     width: 100%;
