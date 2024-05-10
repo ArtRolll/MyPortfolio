@@ -363,8 +363,10 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background: url(./laughing-luffy-one-6000x3375-12360-fotor-20230828122037.png);
+        background: url(./Untitled.png);
         background-repeat: no-repeat;
+        background-position: center;
+        
     }
     .header-text{
         margin-top: 90%;
