@@ -33,6 +33,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
@@ -262,6 +263,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -304,8 +308,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .list-inside {
     list-style-position: inside;
@@ -380,8 +390,15 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-4 {
     border-style: var(--tw-border-style);
@@ -390,11 +407,47 @@
   .bg-\[\#0F52BA\] {
     background-color: #0F52BA;
   }
+  .bg-\[\#ff0000\] {
+    background-color: #ff0000;
+  }
+  .bg-\[\#ff000099\] {
+    background-color: #ff000099;
+  }
+  .bg-\[rgba\(255\,0\,0\,0\.5\)\] {
+    background-color: rgba(255,0,0,0.5);
+  }
+  .bg-\[rgba\(255\,0\,0\,0\.6\)\] {
+    background-color: rgba(255,0,0,0.6);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\"\"\)\] {
+    background-image: url("");
+  }
+  .bg-\[url\(\"\.\/img\/sung-jinwoo\.jpg\"\)\] {
+    background-image: url("./img/sung-jinwoo.jpg");
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\/img\/sung-jinwoo\.jpg\'\)\] {
+    background-image: url('./img/sung-jinwoo.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/ibb\.co\/B52vYYs7\'\)\] {
+    background-image: url('https://ibb.co/B52vYYs7');
+  }
+  .bg-\[url\(\.\/img\/sung-jinwoo\.jpg\)\] {
+    background-image: url(./img/sung-jinwoo.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .object-cover {
     object-fit: cover;
@@ -407,6 +460,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-\[10px\] {
+    padding: 10px;
   }
   .p-\[15px\] {
     padding: 15px;
@@ -454,6 +510,18 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[0px\] {
+    font-size: 0px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -473,6 +541,9 @@
   .text-\[\#0F52BA\] {
     color: #0F52BA;
   }
+  .text-\[\#ff0000\] {
+    color: #ff0000;
+  }
   .text-gray-100 {
     color: var(--color-gray-100);
   }
@@ -488,6 +559,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -500,6 +574,14 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -509,6 +591,9 @@
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-normal {
+    transition-behavior: normal;
   }
   .hover\:scale-110 {
     &:hover {
@@ -527,10 +612,10 @@
       }
     }
   }
-  .hover\:text-\[\#ff0000\] {
+  .hover\:bg-\[\#ff0000\] {
     &:hover {
       @media (hover: hover) {
-        color: #ff0000;
+        background-color: #ff0000;
       }
     }
   }
@@ -741,6 +826,47 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -783,6 +909,16 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
