@@ -527,6 +527,13 @@
       }
     }
   }
+  .hover\:text-\[\#ff0000\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #ff0000;
+      }
+    }
+  }
   .hover\:text-gray-200 {
     &:hover {
       @media (hover: hover) {
