@@ -1,0 +1,11 @@
+{
+  "scripts": {
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch & live-server --port=3000"
+},
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+  
+}
+
